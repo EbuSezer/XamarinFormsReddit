@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            x:Class="Reddit.MainPage"
+            BarBackgroundColor="White"
+            android:TabbedPage.ToolbarPlacement="Bottom" 
+            BackgroundColor="#E8D1DC">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Center"
+                     Spacing="10"
+                     BackgroundColor="Transparent"
+                     x:Name="stack">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="320"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Image Source="user.png"
+                               WidthRequest="40"
+                               HeightRequest="30"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                        <SearchBar Placeholder="Search"
+                                   HeightRequest="30"
+                                   BackgroundColor="Transparent"
+                                   WidthRequest="320"/>
+                    </StackLayout>
+                </Grid>
+        </StackLayout>
+    </NavigationPage.TitleView>
+        <ContentPage Icon="reddit.png" Title=""  WidthRequest="30" BackgroundColor="#E8D1DC"/>
+        <ContentPage Icon="apps.png" Title="" WidthRequest="30"/>
+        <TabbedPage Icon="post.png" Title="" WidthRequest="30" BarBackgroundColor="White" BarTextColor="Black">
+            <ContentPage Title="News"/>
+            <ContentPage Title="Home">
+                <StackLayout>
+                    <Grid x:Name="gridHotPost">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0">
+                            <Image Source="fire.png"
+                                   HorizontalOptions="Start"
+                                   HeightRequest="30"
+                                   WidthRequest="30"/>
+                        </StackLayout>
+                        <StackLayout Grid.Column="1">
+                            <Label Text="Hot Posts"
+                                   FontSize="Medium"
+                                   FontAttributes="Bold"
+                                   TextColor="Silver"
+                                   HorizontalOptions="StartAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Grid.Column="2">
+                            <Image Source="hamburger.png"
+                                   HeightRequest="30"
+                                   WidthRequest="30"
+                                   HorizontalOptions="End"/>
+                        </StackLayout>
+                    </Grid>
+                    <ListView x:Name="listPost"
+                              ItemsSource="{Binding .}"
+                              HasUnevenRows="True"
+                              SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid BackgroundColor="White"
+                                          Margin="0,0,0,5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="user.png"
+                                                   Grid.Column="0"
+                                                   WidthRequest="30"
+                                                   HeightRequest="30"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Start"/>
+                                            <Grid Grid.Column="1"
+                                                  VerticalOptions="Center"
+                                                  HorizontalOptions="Start">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Label Text="r/worldnews"
+                                                       TextColor="Silver"
+                                                       Grid.Row="0"/>
+                                                <Label Grid.Row="1"
+                                                       Text="u/EbuSezer"
+                                                       TextColor="Silver"/>
+                                            </Grid>
+                                            <Label Text="..."
+                                                       TextColor="Silver"
+                                                       FontAttributes="Bold"
+                                                       HorizontalOptions="End"
+                                                       Grid.Column="2"/>
+                                        </Grid>
+                                        <StackLayout Grid.Row="1">
+                                            <Label Text="Best WebSite Ever!!!"/>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="2">
+                                            <Image Source="post1.png"
+                                                   Aspect="AspectFill"
+                                                   HeightRequest="300"
+                                                   WidthRequest="300"/>
+                                        </StackLayout>
+                                        <Grid Grid.Row="3">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30"/>
+                                                <ColumnDefinition Width="30"/>
+                                                <ColumnDefinition Width="30"/>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="up.png"
+                                                   WidthRequest="20"
+                                                   HeightRequest="20"
+                                                   HorizontalOptions="StartAndExpand"
+                                                   Grid.Column="0"/>
+                                            <Label Text="1.4k"
+                                                   HeightRequest="30"
+                                                   WidthRequest="30"
+                                                   Grid.Column="1"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Image Source="down.png"
+                                                   WidthRequest="20"
+                                                   HeightRequest="20"
+                                                   Grid.Column="2"
+                                                   HorizontalOptions="StartAndExpand"/>
+                                            <Image Grid.Column="3"
+                                                   HorizontalOptions="EndAndExpand"
+                                                   HeightRequest="20"
+                                                   WidthRequest="20"
+                                                   Source="comment.png"/>
+                                            <Label Grid.Column="4"
+                                                   Text="10"
+                                                   HorizontalOptions="StartAndExpand"
+                                                   HeightRequest="20"
+                                                   WidthRequest="20"/>
+                                            <Image HorizontalOptions="EndAndExpand"
+                                                   Grid.Column="5"
+                                                   Source="share.png"
+                                                   HeightRequest="20"
+                                                   WidthRequest="20"/>
+                                            <Label Text="Share"
+                                                    Grid.Column="6"
+                                                    HeightRequest="20"
+                                                    HorizontalOptions="StartAndExpand"/>
+                                        </Grid>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage>
+            <ContentPage Title="Popular"/>
+        </TabbedPage>
+        <ContentPage Icon="comment2.png" Title="" WidthRequest="30"/>
+    <ContentPage Icon="message.png" Title="" WidthRequest="30"/>
+</TabbedPage>

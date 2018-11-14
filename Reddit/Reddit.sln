@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit.Android", "Reddit\Reddit.Android\Reddit.Android.csproj", "{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reddit", "Reddit\Reddit\Reddit.csproj", "{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E757B2AE-5F0B-43E5-B0E5-5E7DC0D44202}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000013BD-FE98-4B7A-AA20-7994F1BC7FFD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABB959D4-8BDF-422D-A28A-265A017781C3}
+	EndGlobalSection
+EndGlobal

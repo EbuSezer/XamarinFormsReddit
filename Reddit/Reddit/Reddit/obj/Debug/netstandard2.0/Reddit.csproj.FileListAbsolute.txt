@@ -1,0 +1,11 @@
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\bin\Debug\netstandard2.0\Reddit.deps.json
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\bin\Debug\netstandard2.0\Reddit.dll
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\bin\Debug\netstandard2.0\Reddit.pdb
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.csproj.CoreCompileInputs.cache
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.AssemblyInfoInputs.cache
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.AssemblyInfo.cs
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\XamlC.stamp
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.dll
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.pdb
+C:\XamarinProjeleri\Reddit\Reddit\Reddit\obj\Debug\netstandard2.0\Reddit.csprojAssemblyReference.cache
